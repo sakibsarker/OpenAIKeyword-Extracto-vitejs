@@ -22,7 +22,7 @@ const TextInput = ({extractKeywords}) => {
   return (
     <>
     <Textarea
-    bg='#bfbff9'
+    bg='#e6e6fd'
     color='black'
     padding={4}
 
@@ -33,10 +33,10 @@ const TextInput = ({extractKeywords}) => {
     />
     <Button
     bg='#bfbff9'
-    color="black"
+    color="white"
     marginTop={4}
     width='100%'
-    _hover={{bg: '#bfbff9'}}
+    _hover={{bg: '#e6e6fd'}}
     onClick={submitText}>
         EXTRACT KEYWORDS
         

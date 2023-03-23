@@ -5,10 +5,11 @@ const Header = () => {
   return (
     <>
     <Heading color="white" marginBottom="1rem">
-        Open AI KEYWORD EXTRATOR
+        TEXT TO KEYWORDS GENERATOR
     </Heading>
-    <Text fontSize={25} textAlign="center">
-        Paste in your text below and we'll
+    <Text fontSize={18} textAlign="center">
+    I'm happy to assist you with your writing.
+    <br/>Please share your text and I'll provide suggestions and improvements.
     </Text>
     </>
   )
