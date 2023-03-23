@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Container,Box } from '@chakra-ui/react'
 import Header from './components/Header'
 import TextInput from './components/TextInput'
-
+import KeyModal from './components/KeyModal'
 
 const App=()=> {
   const[keyword,setKeyword]=useState('')
@@ -43,10 +43,10 @@ const App=()=> {
     console.log(error)
   }
 
+ }
 
-  
-
-
+ const closeModal=()=>{
+  setIsOpen(false)
  }
   return (
     <Box bg='#8080ff' color='white' height='100vh' paddingTop='120'>
@@ -54,7 +54,9 @@ const App=()=> {
   
      <Header/>
      <TextInput extractKeywords={extractKeywords}/>
+
      </Container>
+     <KeyModal keyword={keyword} loading={loading} isOpen={isOpen} closeModal={closeModal}/>
     </Box>
   )
 }
